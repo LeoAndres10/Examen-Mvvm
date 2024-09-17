@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Examen_Mvvm.Views.ProductosView"
+             xmlns:viewModel="clr-namespace:Examen_Mvvm.ViewModels"
+             x:DataType="viewModel:ProductosViewModel"
+             Title="MI TIENDA"
+             BackgroundColor="DarkRed">
+
+    <ScrollView>
+        <VerticalStackLayout Margin="30" Spacing="10">
+            <Label Text="Ingrese monto primer producto: "/>
+            <Entry Text="{Binding Producto1}" Keyboard="Numeric"/>
+            
+            <Label Text="Ingrese monto segundo producto: "/>
+            <Entry Text="{Binding Producto2}" Keyboard="Numeric"/>
+            
+            <Label Text="Ingrese monto tercer producto: "/>
+            <Entry Text="{Binding Producto3}" Keyboard="Numeric"/>
+
+            <Label Text="Descuento: "/>
+            <Entry Text="{Binding Descuento}" IsReadOnly="True"/>
+
+            <Label Text="Subtotal: "/>
+            <Entry Text="{Binding Subtotal}" IsReadOnly="True"/>
+
+            <Label Text="Total a Pagar: "/>
+            <Entry Text="{Binding Total}" IsReadOnly="True"/>
+
+            <Button Text="Calcular" Command="{Binding CalcularCommand}" Background="Aqua"/>
+
+            <Button Text="Limpiar" Command="{Binding LimpiarCommand}" Background="DarkViolet"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

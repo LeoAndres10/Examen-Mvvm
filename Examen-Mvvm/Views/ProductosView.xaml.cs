@@ -11,4 +11,5 @@ public partial class ProductosView : ContentPage
 		viewModel = new ProductosViewModel();
 		BindingContext=viewModel;
 	}
+	
 }

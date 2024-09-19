@@ -13,11 +13,11 @@ namespace Examen_Mvvm.ViewModels
     {
 
         [ObservableProperty]
-        private double producto1;
+        private static double producto1;
         [ObservableProperty]
-        private double producto2;
+        private static double producto2;
         [ObservableProperty]
-        private double producto3;
+        private static double producto3;
         [ObservableProperty]
         private double subtotal;
         [ObservableProperty]
